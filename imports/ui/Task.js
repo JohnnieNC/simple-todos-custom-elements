@@ -1,6 +1,6 @@
 import { Tasks } from '../api/tasks.js';
 
-export class Task extends HTMLElement {
+class Task extends HTMLElement {
     constructor(task) {
         super();
 
@@ -54,3 +54,5 @@ export class Task extends HTMLElement {
         `;
     }
 }
+
+export default Task

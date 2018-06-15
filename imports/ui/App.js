@@ -4,6 +4,7 @@ import Task from './Task.js';
 export class App extends HTMLElement {
     constructor() {
         super();
+        customElements.define('my-task', Task);
     }
 
     connectedCallback() {
