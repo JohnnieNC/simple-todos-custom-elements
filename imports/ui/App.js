@@ -41,7 +41,19 @@ export class App extends HTMLElement {
     // Render the view.
     render() {
         // Render content from template.
-        this.innerHTML = document.querySelector('#myapp1').innerHTML;
+        this.innerHTML = `
+        <div class="container">
+            <header>
+                <h1>Todo List</h1>
+                <form class="new-task">
+                    <input type="text" placeholder="Type to add new tasks" />
+                </form>
+            </header>
+
+            <ul id='tasklist'>
+            </ul>
+        </div>
+        `
 
         // Auto run tasks and task rendering.
         Tracker.autorun(() => {
