@@ -28,7 +28,7 @@ export class App extends HTMLElement {
 
     renderTasks() {
         // Get task list.
-        let tasklist = q('#tasklist');
+        let tasklist = this.querySelector('#tasklist');
         tasklist.innerHTML = '';
 
         for (let taskDocument of this.tasks) {
